@@ -23,7 +23,7 @@ class App extends Component {
       .then(result => {
         const cryptos = result.data.Data;
         console.log('cryptos', cryptos);
-        this.setState({ cryptos: cryptos });
+        this.setState({ cryptos});
     });
 
     axios.get(newsUrl)
@@ -31,7 +31,7 @@ class App extends Component {
         const news = result.data;
         console.log('news', news);
         this.setState({
-          news: news
+          news
         })
       });
   }
@@ -62,7 +62,7 @@ class App extends Component {
         {Object.entries(this.state.news).map(
           (item, index) => (
             <div className="crypto-container" key={index}>
-              <span>{item[1].CoinInfo.FullName}</span>
+              {/* <span>{item[1].CoinInfo.FullName}</span>
               <span>{item[1].CoinInfo.AssetLaunchDate}</span>
               <span>{item[1].CoinInfo.Name}</span>
               <span>{item[1].CoinInfo.ImageUrl}</span>
@@ -70,7 +70,7 @@ class App extends Component {
               <span>{item[1].CoinInfo.TotalCoinsMined}</span>
               <span>{item[1].Price.USD}</span>
               <span>{item[1].Price.EUR}</span>
-              <span>{item[1].Price.GHS}</span>
+              <span>{item[1].Price.GHS}</span> */}
             </div>
           ),
           // console.log('cr', crypto[1].CoinInfo.AssetLaunchDate);
