@@ -1,3 +1,3 @@
 import { react } from "react";
 
-alert("This Dude is eating in Konkonte here ");
+alert("Git awsome to learn but boring");
